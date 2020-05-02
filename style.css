@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.input-search {
+    border: 2px solid red;
+    border-radius: 24px;
+    height: 44px;
+    width: 582px;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btn-search {
+    margin-left: 5px;
+    background-color: green;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 24px;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+}
