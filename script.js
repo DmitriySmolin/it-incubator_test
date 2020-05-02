@@ -21,10 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ]
 
-    const showInputValue = ({
-        target
-    } = event) => {
-        console.log()
+    const showInputValue = ({target} = event) => {
+        
         if (target.classList.contains('btn-search')) {
             const value = inputSearch.value.trim();
 
