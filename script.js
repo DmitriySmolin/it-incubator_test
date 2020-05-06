@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //№5
     const users = [
-
         {
             name: 'Dmitry',
             age: 24
@@ -18,13 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Svetlana',
             age: 21
         }
-
     ]
 
-    const showInputValue = ({
-        target
-    } = event) => {
-        console.log()
+    const showInputValue = ({target} = event) => {
+        
         if (target.classList.contains('btn-search')) {
             const value = inputSearch.value.trim();
 
@@ -45,14 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
             //№3
             // value !== '' ? alert(`${value}, ${users[0].name}`) : null;
 
-
             //№10
             value !== '' ?
                 setTimeout(() => {
                     alert(`${value}, ${users[0].name}`)
                 }, 3000) :
                 null;
-
         }
     }
     document.body.addEventListener("click", showInputValue);
@@ -72,10 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (arrNumbers[i] > max || !max) {
             max = arrNumbers[i];
         }
-
         min < arrNumbers[i] ? min = min : min = arrNumbers[i];
-
-
     }
     console.log(`max:${max}`);
     console.log(`min:${min}`);
