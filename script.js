@@ -95,8 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //№9
     const findMax = (array = []) => {
 
-        if (typeof array !== 'object')
+        if (!Array.isArray(array)) {
             console.error('Ошибка!, передаваемый тип данных должен быть массивом');
+            return false;
+        }
 
         let max;
         for (let i = 0; i < array.length; i++) {
